@@ -171,6 +171,14 @@ print(sum_even_number_row(1) == 2)
 print(sum_even_number_row(2) == 10)
 print(sum_even_number_row(4) == 68)
 
-print(create_row(2, 1) == [2])
-print(create_row(4, 2) == [4, 6])
-print(create_row(8, 3) == [8, 10, 12])
+# print(create_row(2, 1) == [2])
+# print(create_row(4, 2) == [4, 6])
+# print(create_row(8, 3) == [8, 10, 12])
+
+# Final Thoughts:
+#   -Not a completely linear process
+#   -Be prepared to move back and forth between steps
+#   -Refer back to your notes
+#   -Switch from implementation mode back to abstract problem solving mode when necessary
+#   -Don't try to problem solve at the code level
+#   -My approach will likely evolve over time
