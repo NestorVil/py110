@@ -20,3 +20,7 @@ def sequence(input_integer):
 print(sequence(5) == [1, 2, 3, 4, 5])   # True
 print(sequence(3) == [1, 2, 3])         # True
 print(sequence(1) == [1])               # True
+
+# Overcomplicated:
+def sequence(limit):
+    return list(range(1, limit + 1))

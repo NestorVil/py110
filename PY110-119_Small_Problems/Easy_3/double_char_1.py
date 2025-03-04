@@ -25,3 +25,7 @@ def repeater(the_string):
 print(repeater('Hello') == "HHeelllloo")              # True
 print(repeater('Good job!') == "GGoooodd  jjoobb!!")  # True
 print(repeater('') == "")                             # True
+
+# Can use list comprehension
+def repeater(string):
+    return ''.join([char * 2 for char in string])

@@ -74,3 +74,15 @@ expected_result = [8, 18, 11, 15, 5, 4, 14, 9, 19, 1,
 
 print(alphabetic_number_sort(input_list) == expected_result)
 # Prints True
+
+# Launchschool
+NUMBER_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five',
+                'six', 'seven', 'eight', 'nine', 'ten', 'eleven',
+                'twelve', 'thirteen', 'fourteen', 'fifteen',
+                'sixteen', 'seventeen', 'eighteen', 'nineteen']
+
+def word_for_number(num):
+    return NUMBER_WORDS[num]
+
+def alphabetic_number_sort(numbers):
+    return sorted(numbers, key=word_for_number)

@@ -17,4 +17,7 @@ def swap_name(full_name):
     return ", ".join(name_as_list)
 
 print(swap_name('Joe Roberts') == "Roberts, Joe")   # True
-print(swap_name("Joe Roberts"))
+
+# Could've done this
+def swap_name(name):
+    return ', '.join(name.split()[::-1])

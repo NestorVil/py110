@@ -3,7 +3,7 @@
 #   Output: A new string that doubles every consonant in the input string
 #   Explicit:
 #       Not double vowels, digits, punctuation, or whitespace
-
+#       Still add those characters but just dont double them
 
 def double_consonants(the_string):
     new_string = ""

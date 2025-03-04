@@ -35,3 +35,7 @@ def leading_substrings(input_string):
 print(leading_substrings('abc') == ['a', 'ab', 'abc'])
 print(leading_substrings('a') == ['a'])
 print(leading_substrings('xyzy') == ['x', 'xy', 'xyz', 'xyzy'])
+
+# Launchschools:
+def leading_substrings(string):
+    return [string[:idx + 1] for idx in range(len(string))]
