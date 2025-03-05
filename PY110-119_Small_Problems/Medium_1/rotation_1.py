@@ -38,12 +38,17 @@
 def rotate_list(input_list):
     if not isinstance(input_list, list):
         return None
+
     if input_list == []:
         return input_list
+
     copied_list = input_list[:]
     popped_element = copied_list.pop(0)
     copied_list.append(popped_element)
+
     return copied_list
+
+    # I'm stupid so could've done return input_list[1:] +[list[0]]
 
 # All of these examples should print True
 

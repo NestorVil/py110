@@ -21,39 +21,46 @@
 #   6. Join the list and return it
 
 
-# def matching(word):
-#     match word:
-#         case "zero":
-#             return "0"
-#         case "one":
-#             return "1"
-#         case "two":
-#             return "2"
-#         case "three":
-#             return "3"
-#         case "four":
-#             return "4"
-#         case "five":
-#             return "5"
-#         case "six":
-#             return "6"
-#         case "seven":
-#             return "7"
-#         case "eight":
-#             return "8"
-#         case "nine":
-#             return "9"
+def matching(word):
+    match word:
+        case "zero":
+            return "0"
+        case "one":
+            return "1"
+        case "two":
+            return "2"
+        case "three":
+            return "3"
+        case "four":
+            return "4"
+        case "five":
+            return "5"
+        case "six":
+            return "6"
+        case "seven":
+            return "7"
+        case "eight":
+            return "8"
+        case "nine":
+            return "9"
 
-# def word_to_digit(sentence):
-#     digits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
-#     split_sentence = sentence.split()
-#     new_list = [word 
-#                 if word not in digits 
-#                 else matching(word) 
-#                 for word in split_sentence]
+def word_to_digit(sentence):
+    digits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+    split_sentence = sentence.split()
+    new_list = [word 
+                if word not in digits 
+                else matching(word) 
+                for word in split_sentence]
 
-#     return " ".join(new_list)
+    return " ".join(new_list)
 
+
+message = 'Please call me at five five five one two three four'
+print(word_to_digit(message) == "Please call me at 5 5 5 1 2 3 4")
+# Should print True
+
+
+# Launchschool's
 NUM_WORDS = {
     'zero':  '0',
     'one':   '1',
@@ -72,7 +79,3 @@ def word_to_digit(sentence):
     processed_words = [NUM_WORDS.get(word, word) for word in words]
     print(processed_words)
     return ' '.join(processed_words)
-
-message = 'Please call me at five five five one two three four'
-print(word_to_digit(message) == "Please call me at 5 5 5 1 2 3 4")
-# Should print True
